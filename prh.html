@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+<title>PRH</title>
+<link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<link href="prh.css" rel="stylesheet" type="text/css" media="all">
+<!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+<style>
+    html, body {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean1.png') 64 64, auto !important;}
+    a {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean2.png') 64 64, auto !important;}
+</style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<body>
+
+    <div class="legend-container">
+        <div class="legend">
+            <p class="legend-content">
+                nyan nyan nyan, nyan nyan nyan nyan nyan nyan nyan. nyan nyan!
+            </p>
+        </div>
+    </div>
+
+    <div class="footer"><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <footer>
+            <div class="footer-content">
+                <p>Contrôle© - Tous droits réservés</p>
+                <p class="mail">groupecontrôle@yandex.ru</p>
+            </div>
+        </footer>
+        </div>
+        
+        <script>
+let noiseScale = 0.08; // noise scale
+let scl = 10;
+let zoff = 20;
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+}
+
+function draw() {
+    let cols = floor(width / scl);
+    let rows = floor(height / scl);
+
+    let xoff = 0;
+
+    for (let x = 0; x < cols; x++) {
+        let yoff = 0;
+
+        for (let y = 0; y < rows; y++) {
+            let brightness = map(noise(xoff, yoff, zoff), 0, 1, 0, 255);
+
+            fill(brightness);
+            noStroke();
+            rect(x * scl, y * scl, scl, scl);
+
+            yoff += noiseScale;
+        }
+        xoff += noiseScale;
+    }
+    zoff += 0.014; // evolution speed
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+    background(0);
+}
+        </script>
+        
+</body>

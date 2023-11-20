@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<title>Slave!</title>
+<link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/slave.css" rel="stylesheet" type="text/css" media="all">
+<!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+<style>
+    html, body {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean1.png') 64 64, auto !important;}
+    a {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean2.png') 64 64, auto !important;}
+</style>
+</head>
+<body>
+    <div class="info-container">
+        <div class="nes-container with-title" id="nes-container">
+            <p class="title">Slave!</p>
+            <div class="center-container">
+                <h2 class="mobile-title">Slave!</h2>
+                <div class="img-container">
+                    <img class="slave-img" src="assets/img/slave.png">
+                </div>
+                <div class="text-column">
+                    <p class="text-slave">Slave! est un dispositif de production de contenu entièrement détenu et opéré par Contrôle©.</p>
+                    <p class="text-slave">Slave! opère en tant qu'instrument génératif. Il a pour mission principale de créer du contenu en ligne, à des fins statistiques <i>(voir : <a href="url" class="programme-link">« Programme de Ramassage Humain »</a></i>).</p>
+                    <p class="text-slave">Un élément crucial dans la construction de son persona est son allure androgyne, l’ambiguïté favorisant les interactions entre utilisateurs en commentaires.</p>
+                    <p class="text-slave">Par ailleurs, le choix du format «<i> tierlist </i>» est également entièrement motivé par la volonté de Contrôle d’optimiser l’engagement des utilisateurs.</p>
+                    <p class="text-slave" id="note"><i>(*Slave! est une marque déposée par Contrôle©.)</i></p>
+                </div> 
+                </div>
+                <div class="social-icons-container">
+                    <div class="social-icons">
+                        <a class="icons-img" href="https://www.twitch.tv/letslovesl4ve"><img src="assets/img/Icon Pack/TwitchIcon.png"></a>
+                        <a class="icons-img" href="https://www.instagram.com/letsloveslave/"><img src="assets/img/Icon Pack/InstagramIcon.png"></a>
+                        <a class="icons-img" href="https://www.youtube.com/@letsloveslave"><img src="assets/img/Icon Pack/YouTubeIcon.png"></a>
+                        <a class="icons-img" href="https://www.tiktok.com/@letsloveslave"><img src="assets/img/Icon Pack/tiktokIcon.png"></a>
+                        <a class="icons-img" href="https://open.spotify.com/intl-fr/artist/1ArU6NvLIEZ78ZnFK76LFf"><img src="assets/img/Icon Pack/SpotifyIcon.png"></a>
+                        <a class="icons-img" href="https://discord.gg/controle"><img src="assets/img/Icon Pack/DiscordIcon.png"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="scroll-down-container">
+        <div class="scroll-down-text">
+            <p style="display: inline-block;" class="scroll-down-button">
+                *Concernant les rumeurs
+                <img src="assets/img/drop-down.svg" class="drop-down-img">
+            </p>
+            <div class="hidden-text" id="hidden-text">
+            <p>
+                Contrôle© est profondément attaché aux principes éthiques et à la considération de chaque individu au sein de notre organisation. Récemment, des allégations concernant des traitements inappropriés envers l'un de nos employés ont été portées à notre attention. Nous tenons à affirmer catégoriquement que ces rumeurs sont infondées et ne reflètent en aucun cas nos valeurs et nos pratiques en matière de gestion des ressources humaines. Contrôle© garantit entièrement la sécurité et le bien-être de Slave! dans le cadre de nos opérations. 
+                <br>
+                <br>
+                Les insinuations concernant les prétendues mauvaises conditions de travail de Slave sont purement mensongères et diffamatoires.
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="mobile-note-container">
+        <div class="mobile-note">
+            <div class="mobile-note-content">
+            <h2>Concernant les rumeurs : </h2>
+            <p>
+                Contrôle© est profondément attaché aux principes éthiques et à la considération de chaque individu au sein de notre organisation. Récemment, des allégations concernant des traitements inappropriés envers l'un de nos employés ont été portées à notre attention. Nous tenons à affirmer catégoriquement que ces rumeurs sont infondées et ne reflètent en aucun cas nos valeurs et nos pratiques en matière de gestion des ressources humaines. Contrôle© garantit entièrement la sécurité et le bien-être de Slave! dans le cadre de nos opérations. 
+                <br>
+                <br>
+                Les insinuations concernant les prétendues mauvaises conditions de travail de Slave sont purement mensongères et diffamatoires.
+            </p>
+            </div>
+            
+        </div>
+    </div>
+-->
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p>Contrôle© - Tous droits réservés</p>
+                <p class="mail">groupecontrôle@yandex.ru</p>
+            </div>
+        </footer>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const dropDownImg = document.querySelector('.scroll-down-button');
+            const hiddenText = document.getElementById('hidden-text');
+            let isTextVisible = false;
+      
+            dropDownImg.addEventListener('click', function() {
+              isTextVisible = !isTextVisible;
+      
+              if (isTextVisible) {
+                  hiddenText.classList.remove('slide-up');
+                  hiddenText.classList.add('slide-down');
+                  dropDownImg.classList.add('flipped');
+              } else {
+                  hiddenText.classList.remove('slide-down');
+                  hiddenText.classList.add('slide-up');
+                  dropDownImg.classList.remove('flipped');
+              }
+            });
+            });
+        </script>
+    
+</body>

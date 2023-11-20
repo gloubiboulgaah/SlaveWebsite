@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>En savoir plus</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<link href="en-savoir-plus.css" rel="stylesheet" type="text/css" media="all">
+<!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    html, body {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean1.png') 64 64, auto !important;}
+    a {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean2.png') 64 64, auto !important;}
+</style>
+</head>
+<body>
+
+    <div class="info-container">
+        <div class="info">
+            <h2><strong>Qui sommes-nous ?</strong></h2>
+             <p>Contrôle© est une société œuvrant dans le secteur du divertissement.</p>
+             <p>À travers sa curation et production de contenu, Contrôle© redéfinit la manière dont le monde interagit avec le divertissement en ligne.</p>
+             <p>Nous sommes plus qu’une entreprise de divertissement ; notre mission est de maintenir une empreinte durable en influençant les tendances, les perceptions et les idées.</p>
+            <br>
+            <h2><strong>Nos créateurs de contenu</strong></h2>
+            <p>Contrôle© se démarque en collaborant avec des esprits créatifs et des talents émergents qui ne se conforment pas aux schémas conventionnels des influenceurs. Notre approche consiste à identifier et diriger de nouveaux talents en les intégrant dans notre stratégie marketing pour produire des expériences de divertissement uniques.</p>
+            <p>Dans une démarche de nouer un lien émotionnel fort entre l’audience et le contenu produit, Contrôle© intègre délibérément la création de relations para-sociales entre ses créateurs et leur audience à ses stratégies de communication. </p>
+            <br>
+            <h2><strong>Notre intérêt pour la musique</strong></h2>
+            <p>Contrôle© s’intéresse aux possibles applications rituelles et sociales de la musique. Nos études ont démontré que la musique renforce significativement la connexion émotionnelle entre notre audience et nos contenus : nous l’envisageons comme un outil essentiel pour rassembler, marquer les esprits et transformer les expériences sociales. </p>
+            <br>
+        </div>
+        <div class="poles-container">
+            <h2 class="poles-title">Les divisions Contrôle©</h2>
+            <div class="poles">
+                <div class="poles-main">
+                    <div class="poles-box" id="marketing">
+                        <h3>Division Marketing</h3>
+                        <div class="additional-text">
+                            Additional text for Marketing goes here.
+                        </div>
+                    </div>
+                    <div class="poles-box" id="ressources-humaines">
+                        <h3>Ressources humaines</h3>
+                        <div class="additional-text">
+                            Additional text for Marketing goes here.
+                        </div>
+                    </div>
+                    <div class="poles-box" id="relations-publiques">
+                        <h3>Relations publiques</h3>
+                        <div class="additional-text">
+                            Additional text for Marketing goes here.
+                        </div>
+                    </div>
+                    <div class="poles-box" id="management">
+                        <h3>Meta-management</h3>
+                        <div class="additional-text">
+                            Additional text for Marketing goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cntrl-container">
+            <div class="slave-and-schizo">
+                <img src="assets/img/schizo-slave-web-transparent.png">
+            </div>
+            <div class="cntrl">
+             <img src="assets/img/antipsy.png">
+         </div> 
+         </div>  
+    </div>
+<br>
+<br>
+<br>
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p>Contrôle© - Tous droits réservés</p>
+                <p class="mail">groupecontrôle@yandex.ru</p>
+            </div>
+        </footer>
+        </div>
+
+        <script>
+   $(document).ready(function () {
+    $('.poles-box').click(function (event) {
+        var $clickedText = $(this).find('.additional-text');
+        var $otherText = $('.additional-text').not($clickedText);
+
+        if (!$clickedText.hasClass('show')) {
+            // Hide other visible additional texts
+            $otherText.removeClass('show').animate({ maxHeight: '0' }, 200).slideUp(200);
+
+            // Slide down and show clicked text
+            $clickedText.addClass('show').slideDown(200).animate({ maxHeight: '1000px' }, 200);
+        } else {
+            // Slide up and hide clicked text on second click
+            $clickedText.removeClass('show').animate({ maxHeight: '0' }, 200).slideUp(200);
+        }
+
+        event.stopPropagation(); // Prevent event bubbling
+    });
+
+    // Hide text when clicking outside the boxes
+    $(document).click(function () {
+        $('.additional-text').removeClass('show').animate({ maxHeight: '0' }, 200).slideUp(200);
+    });
+
+    $('.poles-box').click(function (event) {
+        event.stopPropagation(); // Prevent event bubbling
+    });
+});
+        </script>
+</body>
+
