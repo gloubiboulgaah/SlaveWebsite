@@ -1,0 +1,258 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+div.info-container {
+    display: flex;
+    flex-direction:column;
+    margin-top: 5%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+/** centre du site **/
+
+div.center-container {
+    display: flex;
+    padding: 2%;
+}
+
+div.text-column {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.text-slave {
+    font-size: 1.2vw;
+}
+
+div.img-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+}
+
+img.slave-img {
+    width: 100%;
+}
+
+h2.mobile-title {
+    display: none;
+}
+
+div.social-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}   
+.icons-img {
+    flex: 1;
+}
+
+.programme-link {
+    text-decoration: none;
+    color: black;
+}
+
+.programme-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.scroll-down-container {
+    font-size: 2vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.scroll-down-button{
+    cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean2.png') 64 64, auto !important;
+}
+
+.scroll-down-text img{
+    height:2vw;
+    width:auto;
+}
+
+.scroll-down-text{
+    padding-top: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-text {
+    font-size: 1.2vw;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    width: 65%;
+    opacity: 0;
+    padding: 2%;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+@media (max-width:767px) {
+}
+
+.footer{
+    background-color: #000;
+    color:#fff;
+    font-size: 0.7vw;
+    width:100%;
+    bottom: 1;
+    margin-top: auto;
+  }
+
+.footer p {
+    margin: 0;
+}
+
+.footer-content{
+    font-family: 'ft88expanded';
+    display:flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+  } 
+
+
+.title {
+    font-family: 'ft88expanded';
+}
+
+p {
+    font-family: 'ft88regular';
+}
+
+/** FONT **/
+
+@font-face {
+    font-family: 'fengardo_neueblack';
+    src: url('assets/fonts/fengardoneue_black-webfont.woff2') format('woff2'),
+         url('assets/fonts/fengardoneue_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fengardo_neueregular';
+    src: url('assets/fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/fengardoneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vg5000_regularregular';
+    src: url('assets/fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
+         url('assets/fonts/vg5000-regular_web-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vg5000_regularregular';
+    src: url('assets/fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
+         url('assets/fonts/vg5000-regular_web-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88school';
+    src: url('assets/fonts/ft88-school-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-school-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88italic';
+    src: url('assets/fonts/ft88-italic-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88gothique';
+    src: url('assets/fonts/ft88-gothique-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-gothique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ft88bold';
+    src: url('assets/fonts/ft88-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88expanded';
+    src: url('assets/fonts/ft88-expanded-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-expanded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88regular';
+    src: url('assets/fonts/ft88-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft88serif';
+    src: url('assets/fonts/ft88-serif-webfont.woff2') format('woff2'),
+         url('assets/fonts/ft88-serif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/** SCROLLBAR **/
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000; 
+    border: 2px solid #fff; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+  }

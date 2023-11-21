@@ -3,8 +3,7 @@
 <title>Slave!</title>
 <link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="style.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/slave.css" rel="stylesheet" type="text/css" media="all">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all">
 <!-- minify -->
 <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
 <!-- latest -->
@@ -46,10 +45,9 @@
               </div>
             </div>
     </div>
-
     <div class="scroll-down-container">
         <div class="scroll-down-text">
-            <p style="display: inline-block;" class="scroll-down-button">
+            <p style="display: inline-block;" class="scroll-down-button" onclick="afficherOuMasquerDiv()">
                 *Concernant les rumeurs
                 <img src="assets/img/drop-down.svg" class="drop-down-img">
             </p>
@@ -60,26 +58,12 @@
                 <br>
                 Les insinuations concernant les prétendues mauvaises conditions de travail de Slave sont purement mensongères et diffamatoires.
             </p>
+            <br>
         </div>
         </div>
     </div>
 
-    <!--
-    <div class="mobile-note-container">
-        <div class="mobile-note">
-            <div class="mobile-note-content">
-            <h2>Concernant les rumeurs : </h2>
-            <p>
-                Contrôle© est profondément attaché aux principes éthiques et à la considération de chaque individu au sein de notre organisation. Récemment, des allégations concernant des traitements inappropriés envers l'un de nos employés ont été portées à notre attention. Nous tenons à affirmer catégoriquement que ces rumeurs sont infondées et ne reflètent en aucun cas nos valeurs et nos pratiques en matière de gestion des ressources humaines. Contrôle© garantit entièrement la sécurité et le bien-être de Slave! dans le cadre de nos opérations. 
-                <br>
-                <br>
-                Les insinuations concernant les prétendues mauvaises conditions de travail de Slave sont purement mensongères et diffamatoires.
-            </p>
-            </div>
-            
-        </div>
-    </div>
--->
+
     <div class="footer">
         <footer>
             <div class="footer-content">
@@ -88,27 +72,31 @@
             </div>
         </footer>
         </div>
+    
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            const dropDownImg = document.querySelector('.scroll-down-button');
-            const hiddenText = document.getElementById('hidden-text');
-            let isTextVisible = false;
-      
-            dropDownImg.addEventListener('click', function() {
-              isTextVisible = !isTextVisible;
-      
-              if (isTextVisible) {
-                  hiddenText.classList.remove('slide-up');
-                  hiddenText.classList.add('slide-down');
-                  dropDownImg.classList.add('flipped');
-              } else {
-                  hiddenText.classList.remove('slide-down');
-                  hiddenText.classList.add('slide-up');
-                  dropDownImg.classList.remove('flipped');
-              }
-            });
-            });
-        </script>
+    <script>
+                // Fonction pour afficher ou masquer la div
+        function afficherOuMasquerDiv() {
+            var div = document.getElementById('hidden-text');
+
+            // Vérifie si la div est actuellement visible
+            if (div.style.display === 'block' || div.style.opacity === '1') {
+                // Si oui, la masque en ajustant la propriété 'max-height' et 'opacity'
+                div.style.maxHeight = '0';
+                div.style.opacity = 0;
+                // Ajoute un délai avant de changer 'display' pour laisser le temps à la transition de se terminer
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 500); // 500 ms, la même durée que la transition
+            } else {
+                // Sinon, l'affiche de manière fluide
+                div.style.display = 'block';
+                window.getComputedStyle(div).opacity;
+                div.style.maxHeight = '500px'; // Ajustez la valeur maximale en fonction de vos besoins
+                div.style.opacity = 1;
+            }
+        }
+
+    </script>
     
 </body>
