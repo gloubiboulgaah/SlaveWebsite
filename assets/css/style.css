@@ -5,7 +5,18 @@ body {
 
 }
 
+.title {
+    font-family: 'ft88expanded';
+}
 
+p {
+    font-size: 1.2vw;
+    font-family: 'ft88regular';
+}
+
+.hidden-text p {
+    font-size: 1.2vw;
+}
 
 div.info-container {
     display: flex;
@@ -25,10 +36,6 @@ div.center-container {
 div.text-column {
     width: 100%;
     padding-left: 5%;
-}
-
-.text-slave {
-    font-size: 1.2vw;
 }
 
 div.img-container {
@@ -76,7 +83,11 @@ div.social-icons {
     cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/clean2.png') 64 64, auto !important;
 }
 
-.scroll-down-text img{
+.scroll-down-button {
+    font-size: 2vw;
+}
+
+.scroll-down-button img{
     height:2vw;
     width:auto;
 }
@@ -90,7 +101,6 @@ div.social-icons {
 }
 
 .hidden-text {
-    font-size: 1.2vw;
     display: none;
     max-height: 0;
     overflow: hidden;
@@ -102,6 +112,51 @@ div.social-icons {
 
 
 @media (max-width:767px) {
+
+    div.text-column {
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+    div.center-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    div.img-container {
+        display: flex;  
+        width: 30%;
+    }
+    
+    img.slave-img {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    div.info-container {
+        margin-top: 5%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    p {
+        font-size: 2.4vw;
+    }
+
+    .scroll-down-button {
+        font-size: 3vw;
+    }
+    
+    .scroll-down-button img{
+        height:3vw;
+        width:auto;
+    }
+
+    .hidden-text p {
+        font-size: 2.4vw;
+    }
+
 }
 
 .footer{
@@ -127,14 +182,6 @@ div.social-icons {
     justify-content: space-between;
   } 
 
-
-.title {
-    font-family: 'ft88expanded';
-}
-
-p {
-    font-family: 'ft88regular';
-}
 
 /** FONT **/
 
