@@ -140,8 +140,8 @@ p {
 
 @font-face {
     font-family: 'fengardo_neueblack';
-    src: url('assets/fonts/fengardoneue_black-webfont.woff2') format('woff2'),
-         url('assets/fonts/fengardoneue_black-webfont.woff') format('woff');
+    src: url('../fonts/fengardoneue_black-webfont.woff2') format('woff2'),
+         url('../fonts/fengardoneue_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -149,8 +149,8 @@ p {
 
 @font-face {
     font-family: 'fengardo_neueregular';
-    src: url('assets/fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
-         url('assets/fonts/fengardoneue_regular-webfont.woff') format('woff');
+    src: url('../fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/fengardoneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -158,8 +158,8 @@ p {
 
 @font-face {
     font-family: 'vg5000_regularregular';
-    src: url('assets/fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
-         url('assets/fonts/vg5000-regular_web-webfont.woff') format('woff');
+    src: url('../fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
+         url('../fonts/vg5000-regular_web-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -167,8 +167,8 @@ p {
 
 @font-face {
     font-family: 'vg5000_regularregular';
-    src: url('assets/fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
-         url('assets/fonts/vg5000-regular_web-webfont.woff') format('woff');
+    src: url('../fonts/vg5000-regular_web-webfont.woff2') format('woff2'),
+         url('../fonts/vg5000-regular_web-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -176,8 +176,8 @@ p {
 
 @font-face {
     font-family: 'ft88school';
-    src: url('assets/fonts/ft88-school-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-school-webfont.woff') format('woff');
+    src: url('../fonts/ft88-school-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-school-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -185,8 +185,8 @@ p {
 
 @font-face {
     font-family: 'ft88italic';
-    src: url('assets/fonts/ft88-italic-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-italic-webfont.woff') format('woff');
+    src: url('../fonts/ft88-italic-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -194,16 +194,16 @@ p {
 
 @font-face {
     font-family: 'ft88gothique';
-    src: url('assets/fonts/ft88-gothique-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-gothique-webfont.woff') format('woff');
+    src: url('../fonts/ft88-gothique-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-gothique-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ft88bold';
-    src: url('assets/fonts/ft88-bold-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-bold-webfont.woff') format('woff');
+    src: url('../fonts/ft88-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -211,8 +211,8 @@ p {
 
 @font-face {
     font-family: 'ft88expanded';
-    src: url('assets/fonts/ft88-expanded-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-expanded-webfont.woff') format('woff');
+    src: url('../fonts/ft88-expanded-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-expanded-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -220,8 +220,8 @@ p {
 
 @font-face {
     font-family: 'ft88regular';
-    src: url('assets/fonts/ft88-regular-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-regular-webfont.woff') format('woff');
+    src: url('../fonts/ft88-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -229,8 +229,8 @@ p {
 
 @font-face {
     font-family: 'ft88serif';
-    src: url('assets/fonts/ft88-serif-webfont.woff2') format('woff2'),
-         url('assets/fonts/ft88-serif-webfont.woff') format('woff');
+    src: url('../fonts/ft88-serif-webfont.woff2') format('woff2'),
+         url('../fonts/ft88-serif-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
