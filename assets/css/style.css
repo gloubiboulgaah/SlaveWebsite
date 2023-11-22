@@ -1,3 +1,5 @@
+/* Base du site pour ordi > 767px | partie site mobile : ligne 117 */
+
 body {
     min-height: 100vh;
     display: flex;
@@ -110,22 +112,23 @@ div.social-icons {
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+/* RESPONSIVE PARTIE MOBILE */
 
 @media (max-width:767px) {
 
     div.text-column {
         width: 100%;
-        padding-left: 5%;
+        margin-top: 5%;
     }
     
     div.center-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
     div.img-container {
         display: flex;  
-        width: 30%;
+        width: 60%;
     }
     
     img.slave-img {
@@ -134,28 +137,50 @@ div.social-icons {
 
     }
 
-    div.info-container {
-        margin-top: 5%;
-        margin-left:10%;
-        margin-right:10%;
+    .nes-container.with-title>.title {
+        display: none;
     }
 
+    #nes-container {
+        border: none;
+        padding:3rem 0rem;
+        padding-bottom: 0rem;
+    }
+
+    div.info-container {
+        margin-top: 5%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    #slaveTitle {
+        display: none;
+    }
+    h2.mobile-title {
+        font-family: 'ft88expanded';
+        display: block;
+    }
     p {
-        font-size: 2.4vw;
+        font-size: 3vw;
     }
 
     .scroll-down-button {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .scroll-down-button img{
-        height:3vw;
+        height:4vw;
         width:auto;
     }
 
-    .hidden-text p {
-        font-size: 2.4vw;
+    .hidden-text {
+        width: 80%;
     }
+    .hidden-text p {
+        font-size: 3vw;
+    }
+
+
 
 }
 
@@ -183,7 +208,8 @@ div.social-icons {
   } 
 
 
-/** FONT **/
+/* FONT  */
+/* j'ai juste modifié les chemins pour les fichiers */
 
 @font-face {
     font-family: 'fengardo_neueblack';
