@@ -75,7 +75,7 @@
     
 
     <script>
-                // Fonction pour afficher ou masquer la div
+        // Fonction pour afficher ou masquer la div
         function afficherOuMasquerDiv() {
             var div = document.getElementById('hidden-text');
 
@@ -89,10 +89,9 @@
                     div.style.display = 'none';
                 }, 500); // 500 ms, la même durée que la transition
             } else {
-                // Sinon, l'affiche de manière fluide
                 div.style.display = 'block';
                 window.getComputedStyle(div).opacity;
-                div.style.maxHeight = '500px'; // Ajustez la valeur maximale en fonction de vos besoins
+                div.style.maxHeight = '500px';
                 div.style.opacity = 1;
             }
         }

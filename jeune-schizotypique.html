@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeune Schizotypique</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
-<link href="style.css" rel="stylesheet" type="text/css" media="all">
-<link href="jeune-schizo.css" rel="stylesheet" type="text/css" media="all">
+<title>Jeune Schizotypique</title>
+<link rel="icon" type="image/x-icon" href="assets/img/antipsy.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all">
 <!-- minify -->
 <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
 <!-- latest -->
@@ -19,41 +18,84 @@
 <body>
     <div class="info-container">
         <div class="nes-container with-title" id="nes-container">
-            <p class="title">Jeune Schizotypique</p>
-            <div class="columns-container">
-                <div class="mobile-title-container">
-                    <h2 class="mobile-title">Jeune Schizotypique</h2>
+            <p id="slaveTitle"class="title">Jeune Schizotypique</p>
+            <div class="center-container">
+                <h2 class="mobile-title">Jeune Schizotypique</h2>
+                <div class="img-container">
+                    <img class="slave-img" src="assets/img/jeuneschizo.png">
                 </div>
-               <div class="image-column">
-                <img src="assets/img/jeuneschizo.png">
-            </div>
-            <div class="text-column">
-                <p>Slave! est un dispositif de production de contenu entièrement détenu et opéré par Contrôle©.</p>
-                <p>Slave! opère en tant qu'instrument génératif. Il a pour mission principale de créer du contenu en ligne, à des fins statistiques <i>(voir : <a href="url" class="programme-link">« Programme de Ramassage Humain »</a></i>).</p>
-                <p>Un élément crucial dans la construction de son persona est son allure androgyne, l’ambiguïté favorisant les interactions entre utilisateurs en commentaires.</p>
-                <p>Par ailleurs, le choix du format «<i> tierlist </i>» est également entièrement motivé par la volonté de Contrôle d’optimiser l’engagement des utilisateurs.</p>
-                <p id="note"><i>(*Slave! est une marque déposée par Contrôle©.)</i></p>
-            </div> 
-            </div>
-            <div class="social-icons-container">
-                <div class="social-icons">
-                    <a href="https://www.twitch.tv/letslovesl4ve"><img src="assets/img/Icon Pack/TwitchIcon.png"></a>
-                    <a href="https://www.instagram.com/sekkinnedim"><img src="assets/img/Icon Pack/InstagramIcon.png"></a>
-                    <a href="https://www.youtube.com/@sekkinnedim"><img src="assets/img/Icon Pack/YouTubeIcon.png"></a>
-                    <a href="https://www.tiktok.com/@nedim444444"><img src="assets/img/Icon Pack/tiktokIcon.png"></a>
-                    <a href="https://open.spotify.com/intl-fr/artist/5TfizlTWnvO6iMjpQoCwFR"><img src="assets/img/Icon Pack/SpotifyIcon.png"></a>
-                    <a href="https://discord.gg/controle"><img src="assets/img/Icon Pack/DiscordIcon.png"></a>
+                <div class="text-column">
+                    <p class="text-slave">Jeune Schizotypique est un dispositif de production de contenu entièrement détenu et opéré par Contrôle©.</p>
+                    <p class="text-slave">Jeune Schizotypique opère en tant qu'instrument génératif. Il a pour mission principale de créer du contenu en ligne, à des fins statistiques <i>(voir : <a href="url" class="programme-link">« Programme de Ramassage Humain »</a></i>).</p>
+                    <p class="text-slave">Un élément crucial dans la construction de son persona est son allure androgyne, l’ambiguïté favorisant les interactions entre utilisateurs en commentaires.</p>
+                    <p class="text-slave">Par ailleurs, le choix du format «<i> tierlist </i>» est également entièrement motivé par la volonté de Contrôle d’optimiser l’engagement des utilisateurs.</p>
+                    <p class="text-slave" id="note"><i>(*Jeune Schizotypique est une marque déposée par Contrôle©.)</i></p>
+                </div> 
                 </div>
+                <div class="social-icons-container">
+                    <div class="social-icons">
+                        <a class="icons-img" href="https://www.twitch.tv/letslovesl4ve"><img src="assets/img/Icon Pack/TwitchIcon.png"></a>
+                        <a class="icons-img" href="https://www.instagram.com/letsloveslave/"><img src="assets/img/Icon Pack/InstagramIcon.png"></a>
+                        <a class="icons-img" href="https://www.youtube.com/@letsloveslave"><img src="assets/img/Icon Pack/YouTubeIcon.png"></a>
+                        <a class="icons-img" href="https://www.tiktok.com/@letsloveslave"><img src="assets/img/Icon Pack/tiktokIcon.png"></a>
+                        <a class="icons-img" href="https://open.spotify.com/intl-fr/artist/1ArU6NvLIEZ78ZnFK76LFf"><img src="assets/img/Icon Pack/SpotifyIcon.png"></a>
+                        <a class="icons-img" href="https://discord.gg/controle"><img src="assets/img/Icon Pack/DiscordIcon.png"></a>
+                    </div>
+                </div>
+              </div>
             </div>
-          </div>
     </div>
+    <div class="scroll-down-container">
+        <div class="scroll-down-text">
+            <p style="display: inline-block;" class="scroll-down-button" onclick="afficherOuMasquerDiv()">
+                *Concernant les rumeurs
+                <img src="assets/img/drop-down.svg" class="drop-down-img">
+            </p>
+            <div class="hidden-text" id="hidden-text">
+            <p>
+                Contrôle© est profondément attaché aux principes éthiques et à la considération de chaque individu au sein de notre organisation. Récemment, des allégations concernant des traitements inappropriés envers l'un de nos employés ont été portées à notre attention. Nous tenons à affirmer catégoriquement que ces rumeurs sont infondées et ne reflètent en aucun cas nos valeurs et nos pratiques en matière de gestion des ressources humaines. Contrôle© garantit entièrement la sécurité et le bien-être de Jeune Schizotypique dans le cadre de nos opérations. 
+                <br>
+                <br>
+                Les insinuations concernant les prétendues mauvaises conditions de travail de Slave sont purement mensongères et diffamatoires.
+            </p>
+            <br>
+        </div>
+        </div>
+    </div>
+
 
     <div class="footer">
         <footer>
             <div class="footer-content">
                 <p>Contrôle© - Tous droits réservés</p>
-                <p>groupecontrôle@yandex.ru</p>
+                <p class="mail">groupecontrôle@yandex.ru</p>
             </div>
         </footer>
         </div>
+    
+
+    <script>
+        // Fonction pour afficher ou masquer la div
+        function afficherOuMasquerDiv() {
+            var div = document.getElementById('hidden-text');
+
+            // Vérifie si la div est actuellement visible
+            if (div.style.display === 'block' || div.style.opacity === '1') {
+                // Si oui, la masque en ajustant la propriété 'max-height' et 'opacity'
+                div.style.maxHeight = '0';
+                div.style.opacity = 0;
+                // Ajoute un délai avant de changer 'display' pour laisser le temps à la transition de se terminer
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 500); // 500 ms, la même durée que la transition
+            } else {
+                div.style.display = 'block';
+                window.getComputedStyle(div).opacity;
+                div.style.maxHeight = '500px';
+                div.style.opacity = 1;
+            }
+        }
+
+    </script>
+    
 </body>

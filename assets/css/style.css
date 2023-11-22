@@ -153,12 +153,13 @@ div.social-icons {
         margin-right:5%;
     }
 
-    #slaveTitle {
+    #slaveTitle { 
         display: none;
     }
     h2.mobile-title {
         font-family: 'ft88expanded';
         display: block;
+        font-size: 5vw;
     }
     p {
         font-size: 3vw;
