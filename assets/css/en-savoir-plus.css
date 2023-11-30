@@ -114,6 +114,7 @@ strong {
     z-index: 1;
     height: 80vh;
     margin-top: -80vh;
+    opacity: 0.7;
 }
 
 @media (max-width:767px) {
