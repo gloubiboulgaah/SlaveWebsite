@@ -164,7 +164,9 @@ div.social-icons {
     p {
         font-size: 3vw;
     }
-
+    .footer p {
+        font-size: 2vw;
+    }
     .scroll-down-button {
         font-size: 4vw;
     }
