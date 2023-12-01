@@ -1,4 +1,9 @@
 
+.back-icon-container {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 .info-s-container {
     display: flex;
     flex-direction: column;

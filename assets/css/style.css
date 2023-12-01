@@ -7,6 +7,10 @@ body {
 
 }
 
+.back-icon-img {
+    width: 2%;
+}
+
 .title {
     font-family: 'ft88expanded';
 }
@@ -14,6 +18,7 @@ body {
 p {
     font-size: 1.2vw;
     font-family: 'ft88regular';
+    text-align: justify;
 }
 
 .hidden-text p {
@@ -116,6 +121,10 @@ div.social-icons {
 
 @media (max-width:767px) {
 
+    .back-icon-img {
+        width: 5%;
+    }
+
     div.text-column {
         width: 100%;
         margin-top: 5%;
@@ -143,8 +152,8 @@ div.social-icons {
 
     #nes-container {
         border: none;
-        padding:3rem 0rem;
         padding-bottom: 0rem;
+        padding-top: 0rem;
     }
 
     div.info-container {
